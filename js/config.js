@@ -1,3 +1,4 @@
+// Github Copilot wrote some naughty sites...
 export const defaultBlocks = [
     "nhentai.net",
     "pornhub.com",

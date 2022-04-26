@@ -1,15 +1,15 @@
 {
-  "name": "power-work",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "sortablejs": "^1.15.0"
-  }
+    "name": "power-work",
+    "version": "1.0.0",
+    "description": "Stay focused with the power of not watching hentai!",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "sortablejs": "^1.15.0"
+    }
 }
