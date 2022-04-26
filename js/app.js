@@ -36,9 +36,17 @@ const syncRules = (prevBlocks, newBlocks) => {
 
 let blocks = await get("blocks", []);
 let enabled = await get("enabled", true);
+let initSync = false;
 
 if (blocks.length == 0) {
     blocks = defaultBlocks;
+    initSync = true;
+
+    syncBlocks(blocks);
+}
+
+if (enabled && !initSync) {
+    initSync = true;
     syncBlocks(blocks);
 }
 
@@ -99,6 +107,6 @@ $("input").addEventListener("keydown", (e) => {
 $("button").addEventListener("click", (e) => {
     enabled = !enabled;
     e.target.textContent = enabled ? "Disable" : "Enable";
-    syncRules(blocks, []);
+    syncRules(blocks, enabled ? blocks : []);
     sync("enabled", enabled);
 });
