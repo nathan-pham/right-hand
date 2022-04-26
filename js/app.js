@@ -5,8 +5,6 @@ import jsh from "/js/libs/jsh.js";
 
 import { get, sync } from "/js/libs/storage.js";
 
-import { defaultBlocks } from "./config.js";
-
 import ListItem from "./components/ListItem.js";
 
 const syncBlocks = (newBlocks) => {
@@ -36,17 +34,8 @@ const syncRules = (prevBlocks, newBlocks) => {
 
 let blocks = await get("blocks", []);
 let enabled = await get("enabled", true);
-let initSync = false;
 
-if (blocks.length == 0) {
-    blocks = defaultBlocks;
-    initSync = true;
-
-    syncBlocks(blocks);
-}
-
-if (enabled && !initSync) {
-    initSync = true;
+if (enabled) {
     syncBlocks(blocks);
 }
 

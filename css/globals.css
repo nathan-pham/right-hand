@@ -9,10 +9,17 @@ body {
     box-sizing: border-box;
     background-color: #fafafa;
     font-family: "Inter", sans-serif;
+
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
 }
 
 *,
 ::before,
 ::after {
     box-sizing: inherit;
+}
+
+::-webkit-scrollbar {
+    display: none;
 }
