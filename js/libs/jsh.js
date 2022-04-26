@@ -22,11 +22,13 @@ const h = (tag, props = {}, children = []) => {
     for (const child of children) {
         // if the child is a string then add it as a text node
         // otherwise just add it as an element
-        if (typeof child == "string") {
-            const text = document.createTextNode(child);
-            element.appendChild(text);
-        } else {
-            element.appendChild(child);
+        if (child) {
+            if (typeof child == "string") {
+                const text = document.createTextNode(child);
+                element.appendChild(text);
+            } else {
+                element.appendChild(child);
+            }
         }
     }
 
