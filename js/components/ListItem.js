@@ -17,10 +17,15 @@ const ListItem = ({ title, onTrash, ...props } = {}) => {
             }),
             jsh.span({ class: "link-list__item__text" }, title)
         ),
-        TrashIcon({
-            class: "link-list__item__trash",
-            onClick: onTrash,
-        })
+        jsh.div(
+            {
+                onClick: onTrash,
+                class: "link-list__item__trash",
+            },
+            TrashIcon({
+                style: "pointer-events: none",
+            })
+        )
     );
 };
 
