@@ -39,6 +39,11 @@ if (enabled) {
     syncBlocks(blocks);
 }
 
+const onTrash = (e) => {
+    e.target.parentNode.remove();
+    syncBlocks();
+};
+
 // create app ui
 $("#app").append(
     jsh.h1({ style: "margin: 2rem 0 0 0" }, "💪 Right Hand"),
@@ -59,15 +64,7 @@ $("#app").append(
         {
             class: "link-list",
         },
-        blocks.map((title) =>
-            ListItem({
-                title,
-                onTrash: (e) => {
-                    e.target.parentNode.remove();
-                    syncBlocks();
-                },
-            })
-        )
+        blocks.map((title) => ListItem({ title, onTrash }))
     ),
     jsh.footer({}, "Nathan Pham")
 );
@@ -87,7 +84,7 @@ $("input").addEventListener("keydown", (e) => {
 
         if (title) {
             e.target.value = "";
-            $(".link-list").prepend(ListItem({ title }));
+            $(".link-list").prepend(ListItem({ title, onTrash }));
             syncBlocks();
         }
     }
