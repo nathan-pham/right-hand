@@ -13,13 +13,15 @@ const h = (tag, props = {}, children = []) => {
         // otherwise just set the attribute
         if (key.startsWith("on")) {
             element.addEventListener(key.substring(2).toLowerCase(), value);
+        } else if (key.startsWith("data-")) {
+            element.dataset[key.substring(5)] = value;
         } else {
             element.setAttribute(key, value);
         }
     }
 
     // loop through the children
-    for (const child of children) {
+    for (const child of children.flat(Infinity)) {
         // if the child is a string then add it as a text node
         // otherwise just add it as an element
         if (child) {

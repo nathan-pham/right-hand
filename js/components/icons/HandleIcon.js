@@ -1,4 +1,4 @@
-import jsh from "jsh";
+import jsh from "/js/libs/jsh.js";
 
 const HandleIcon = (props = {}) =>
     jsh.svg(

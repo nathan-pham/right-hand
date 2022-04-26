@@ -4,35 +4,32 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link
-            rel="icon"
-            href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💪</text></svg>"
-        />
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
         <title>Power Work</title>
 
         <link rel="stylesheet" href="/css/globals.css" />
         <link rel="stylesheet" href="/css/index.css" />
 
-        <script type="importmap">
+        <!-- <script type="importmap">
             {
                 "imports": {
-                    "sortablejs": "/node_modules/sortablejs/modular/sortable.esm.js",
+                    "sortablejs": "",
+                    "query": "/js/libs/query.js",
                     "jsh": "/js/libs/jsh.js"
                 }
             }
-        </script>
+
+                // "content_scripts": [
+    //     {
+    //         "matches": ["<all_urls>"],
+    //         "js": ["js/blocker.js"]
+    //     }
+    // ],
+
+        </script> -->
     </head>
     <body>
-        <div id="app">
-            <h1>Power Work</h1>
-            <p>Stay focused with the power of not watching hentai!</p>
-
-            <button>enable</button>
-
-            <ul class="link-list"></ul>
-
-            <footer></footer>
-        </div>
+        <div id="app"></div>
         <script type="module" src="/js/app.js"></script>
     </body>
 </html>
