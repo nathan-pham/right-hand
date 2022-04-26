@@ -8,5 +8,42 @@ h1 {
 }
 
 p {
+    margin: 0.75rem 0 0 0;
+    font-size: 1rem;
+    color: #666;
+}
+
+button {
+    font-size: 1rem;
+    border-radius: 0.5rem;
     margin: 1rem 0 0 0;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    outline: none;
+    background-color: #222;
+    color: #fff;
+    cursor: pointer;
+}
+
+.link-list {
+    margin: 2rem 0 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.link-list__item {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    user-select: none;
+}
+
+.link-list__item__handle {
+    cursor: pointer;
+}
+
+.link-list__item__trash {
+    cursor: pointer;
+    margin-left: auto;
 }
