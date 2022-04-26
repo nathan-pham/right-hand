@@ -41,7 +41,7 @@ if (enabled) {
 
 // create app ui
 $("#app").append(
-    jsh.h1({ style: "margin: 2rem 0 0 0" }, "💪 Power Work"),
+    jsh.h1({ style: "margin: 2rem 0 0 0" }, "💪 Right Hand"),
     jsh.p(
         { style: "margin: 0.75rem 0 0 0" },
         "Stay focused with the power of not watching hentai!"

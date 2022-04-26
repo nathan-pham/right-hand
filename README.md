@@ -1,6 +1,6 @@
-![project banner](https://project-banner.phamn23.repl.co/?title=Power+Work&description=Stay%20focused%20with%20the%20power%20of%20not%20watching%20hentai!&stack=html%2Ccss%2Cjs)
+![project banner](https://project-banner.phamn23.repl.co/?title=Right+Hand&description=Stay%20focused%20with%20the%20power%20of%20not%20watching%20hentai!&stack=html%2Ccss%2Cjs)
 
-# Power Work
+# Right Hand
 
 Stay focused with the power of not watching hentai!
 
